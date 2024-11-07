@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Resume Builder</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="container">
+    <h1>Resume Builder</h1>
+
+    <!-- Personal Info Section -->
+    <section>
+      <h2>Personal Info</h2>
+      <input type="text" id="name" placeholder="Full Name" required />
+      <input type="email" id="email" placeholder="Email" required />
+      <input type="tel" id="phone" placeholder="Phone Number" required />
+    </section>
+
+
+    <div class="img">
+      <img src="https://i.etsystatic.com/42787653/r/il/20a481/4886832531/il_794xN.4886832531_fsdg.jpg"
+        id="profile-pic" /> <br>
+      <input id="profile-upload" type="file" accept="image/*" />
+      <label for="profile-upload" class="custom-file-upload">Select Profile Pic</label>
+    </div>
+
+    <section>
+      <h2>Education</h2>
+      <div id="education-section">
+      </div>
+      <button type="button" id="add-education">Add Education</button>
+    </section>
+
+    <section>
+      <h2>Skills</h2>
+      <div id="skills-section"></div>
+      <input type="text" id="skill-input" placeholder="Add Skill" />
+      <button type="button" id="add-skill">Add Skill</button>
+    </section>
+
+
+    <section>
+      <h2>Experience</h2>
+      <div id="experience-section">
+      </div>
+      <button type="button" id="add-experience">Add Experience</button>
+    </section>
+
+  </div>
+
+  <script src="script.js" defer></script>
+</body>
+
+</html>
